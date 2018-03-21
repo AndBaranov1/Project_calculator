@@ -11,6 +11,7 @@ public class Calculator {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Выберите задание и нажимет Enter:(1-Calculator, 2-String array)");
         int num = scanner.nextInt();
+        //Проверяем если нажали 1, то выполняется калькулятор
         if (num == 1) {
             //Выводим в консоль текст "Введите первое число"
             System.out.println("Введите первое число и нажмите Enter");
@@ -36,6 +37,7 @@ public class Calculator {
             if (operation.equals("*")) {
                 System.out.printf("Результат: %.4f", (first_value * second_value));
             }
+            //Если нажали 2, то поиск максималього слова в массиве
         } else if (num == 2) {
             System.out.println("Введите размер массива:");
             int size = scanner.nextInt();
